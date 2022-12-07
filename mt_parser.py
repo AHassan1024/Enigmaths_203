@@ -4,8 +4,7 @@ print("Welcome to the [1..49] parser!")
 
 # Idea: n = 10a + b
 
-for a in range(0, 5):
-    for b in range(0, 10):
-        n = 10*a + b
-        if n != 0:
-            print(n)
+for n in range(1, 50):
+    a = int(n // 10)
+    b = n % 10
+    print(n)
