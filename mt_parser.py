@@ -8,3 +8,11 @@ for n in range(1, 50):
     a = int(n // 10)
     b = n % 10
     print(n)
+
+    # Creating a flag to check if a number is 'special'
+    special = False
+
+    # If n is a cube, set special as True
+    # If n is a square, set special as True
+    # If n is a prime, set special as True
+    # If n is a triangular, set special as True
