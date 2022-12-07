@@ -14,7 +14,7 @@ Cells are clued as follows:
 Any friendly cell (the entry is divisble by the sun of its digits)that falls outside of these categories is labelled F. Only one column includes adjacent primes in its cells. 
 
 |F|S| |T|T|P|P|
-|-|-|-|-|-|-|-|
+|:-|:-|:-|:-|:-|:-|:-|
 |P|F|P| |P| |P|
 |C| |F|P| |S|F|
 |S|P|P|S|C| |P|
