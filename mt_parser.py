@@ -23,4 +23,18 @@ for n in range(1, 50):
         print("Square: ", n)
 
     # If n is a prime, set special as True
+    # Creating a flag to check if a number has a 'factor'
+    factor = False
+    if n > 1:
+        # Checking for factors
+        for i in range(2, 1 + int(round((n + 1) ** (1. / 2)))):
+            if (n % i) == 0 and not factor:
+                # If factor is found, set factor to True
+                factor = True
+        # Have parsed through all possible factor-pairs
+        if not factor:
+            # No factors were found
+            special = True
+            print("Prime: ", n)
+
     # If n is a triangular, set special as True
