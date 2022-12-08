@@ -1,5 +1,8 @@
 # MT Enigmaths Parser
 
+import math
+
+
 print("Welcome to the [1..49] parser!")
 
 # Idea: n = 10a + b
@@ -38,3 +41,9 @@ for n in range(1, 50):
             print("Prime: ", n)
 
     # If n is a triangular, set special as True
+    # Drawing on: Tf = (f)(f+1) / 2
+    f = int(math.floor((2 * n) ** (1. / 2)))
+    print(n, "f", f)
+    if ((f * (f + 1) // 2) == n):
+        special = True
+        print("Triangular: ", n)
