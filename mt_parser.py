@@ -55,3 +55,9 @@ for n in range(1, 50):
     # Identifying un-labelled cells, or 'others'
     if not special:
         print("Other: ", n)
+
+# Useful for identifying pairs
+for n in range(1, 25):
+    # Keep adding to this list to check what pairs are left
+    if n not in [1]:
+        print(n, 50-n)
