@@ -16,6 +16,11 @@ for n in range(1, 50):
     if (int(round(n ** (1. / 3)) ** 3) == n):
         special = True
         print("Cube: ", n)
+
     # If n is a square, set special as True
+    if (int(round(n ** (1. / 2)) ** 2) == n):
+        special = True
+        print("Square: ", n)
+
     # If n is a prime, set special as True
     # If n is a triangular, set special as True
