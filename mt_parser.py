@@ -51,3 +51,7 @@ for n in range(1, 50):
     if not special and not (n % (a+b)):
         special = True
         print("Friendly: ", n)
+
+    # Identifying un-labelled cells, or 'others'
+    if not special:
+        print("Other: ", n)
