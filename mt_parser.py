@@ -43,7 +43,11 @@ for n in range(1, 50):
     # If n is a triangular, set special as True
     # Drawing on: Tf = (f)(f+1) / 2
     f = int(math.floor((2 * n) ** (1. / 2)))
-    print(n, "f", f)
     if ((f * (f + 1) // 2) == n):
         special = True
         print("Triangular: ", n)
+
+    # If a number falls outside of the above categories and is divisible by the sum of its digits, it is 'friendly'
+    if not special and not (n % (a+b)):
+        special = True
+        print("Friendly: ", n)
